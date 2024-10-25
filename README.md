@@ -1,4 +1,4 @@
-# Frontend Mentor Challenges Repository
+# Frontend Mentor Challenges Repository🚀
 
 This repository holds my solutions to Frontend Mentor challenges. Each challenge is a hands-on project designed to build frontend skills through real-world, responsive design tasks. I’ve organized each project into its own folder with all the necessary files.
 
