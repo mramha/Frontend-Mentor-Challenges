@@ -1,0 +1,200 @@
+:root {
+  --clr-White: hsl(0, 0%, 100%);
+
+  --clr-Stone-100: hsl(30, 54%, 90%);
+  --clr-Stone-150: hsl(30, 18%, 87%);
+  --clr-Stone-600: hsl(30, 10%, 34%);
+  --clr-Stone-900: hsl(24, 5%, 18%);
+
+  --clr-Brown-800: hsl(14, 45%, 36%);
+
+  --clr-Rose-800: hsl(332, 51%, 32%);
+  --clr-Rose-50: hsl(330, 100%, 98%);
+
+  --ff-outfit: "Outfit", sans-serif;
+  --ff-young: "Young Serif", serif;
+
+  --fw-regular: 400;
+  --fw-SemiBold: 600;
+  --fw-bold: 700;
+}
+
+/*
+    1. Use a more-intuitive box-sizing model.
+  */
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  margin: 3em;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+}
+
+/* General Styling */
+
+body {
+  display: grid;
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-regular);
+  font-size: 0.825rem;
+  color: var(--clr-Stone-600);
+  padding: 2rem;
+  border-radius: 1rem;
+
+  background-color: var(--clr-Stone-100);
+  place-content: center;
+  margin: 1rem;
+}
+
+.recipe-img {
+  display: flex;
+  border-radius: 1.5rem;
+  align-items: center;
+}
+
+.recipe-box {
+  background-color: var(--clr-White);
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+}
+
+@media (max-width: 768px) {
+  .recipe-box {
+    padding: 1.5rem; /* Slightly less padding on smaller screens */
+    /* You can adjust the width if needed */
+    max-width: 100%; /* Ensure it fits within the viewport */
+  }
+}
+
+.recipe-title {
+  --space-between-section: 1.5rem;
+  font-family: var(--ff-young);
+  font-weight: var(--fw-regular);
+  color: var(--clr-Stone-900);
+  margin-top: 1rem;
+}
+
+.recipe-descripton {
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-regular);
+  color: var(--clr-Stone-600);
+  margin-top: 1rem;
+}
+
+.preparation {
+  border-radius: 1rem;
+  background-color: var(--clr-Rose-50);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.preparation li::marker {
+  font-weight: bold;
+}
+
+.preparation h4 {
+  color: var(--clr-Rose-800);
+}
+
+.ingrediens h2 {
+  font-family: var(--ff-young);
+  font-weight: var(--fw-regular);
+  color: var(--clr-Brown-800);
+}
+
+ol,
+ul {
+  padding: 1rem;
+}
+.instruction h2 {
+  margin: var(--space-between-section);
+  font-family: var(--ff-young);
+  font-weight: var(--fw-regular);
+  color: var(--clr-Brown-800);
+}
+.instruction li::marker {
+  font-weight: bold;
+}
+
+.nutrition h2 {
+  font-family: var(--ff-young);
+  font-weight: var(--fw-regular);
+  color: var(--clr-Brown-800);
+}
+
+.nutrition p {
+  font-family: var(--ff-outfit);
+  font-weight: var(--fw-regular);
+  color: var(--clr-Stone-600);
+  margin-top: 1rem;
+}
+
+table {
+  margin-top: 1rem;
+  border-collapse: collapse;
+  width: 100%;
+}
+tr {
+  padding-top: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.second-col {
+  color: var(--clr-Brown-800);
+  font-weight: bold;
+}
