@@ -21,7 +21,7 @@ Here’s a list of the challenges completed, with quick links to view each proje
 | Challenge Name      | Description                | Live Demo                   | Code                  |
 |---------------------|----------------------------|-----------------------------|-----------------------|
 | **Recipe Page**     | A static, responsive recipe layout | [Live Demo](#) | [View Code](#) |
-| **E-commerce Card** | Simple product display card| [Live Demo](#) | [View Code](#) |
+| **E-commerce Card** | Simple product display card| [Live Demo](#https://recipe-page-main-maram.netlify.app/) | [View Code](#) |
 | **Add more here**   | Brief description of each  | Links to be updated as needed |
 
 ## Technologies Used
